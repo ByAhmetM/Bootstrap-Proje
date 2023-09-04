@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.resimSlider {
+    height: 600px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.about {
+    background-color: #f2f2f2;
+}
+
+.ayrac {
+    border: none;
+    border-top: 3px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+}
+
+.igri {
+    color: #343a40;
+    background-color: #f2f2f2;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid #f2f2f2;
+}
+
+.ibeyaz {
+    color: #343a40;
+    background-color: white;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid white;
+}
+
+.teamCard>img:hover {
+    opacity: 0.8;
+}
+
+.gallery {
+    background-color: #f2f2f2;
+}
+
+.figure:hover {
+    opacity: 0.8;
+}
+
+.figure>a>img {
+    transition: .4s;
+
+}
+
+.figure>a>img:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}

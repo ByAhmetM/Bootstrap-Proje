@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- TODO CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- TODO FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Paylaştıkça</title>
+  </head>
+  <body>
+    <!--! >>>>>>>> NAVBAR <<<<<<<<<< -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ahmet Murat ÜNSAL | @ogretmenbabis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#carouselExampleIndicators"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Ekibimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--! >>>>>>>> NAVBAR END <<<<<<<<<< -->
+    <!-- * >>>>>>>Slider >>>>>>>>  -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/sl1.jpg"
+            class="d-block w-100 resimSlider"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/sl2.jpg"
+            class="d-block w-100 resimSlider"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/sl3.jpg"
+            class="d-block w-100 resimSlider"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- * >>>>>>>Slider END >>>>>>>>  -->
+
+    <!--? >>>>>>>ABOUT START -->
+    <section class="p-5 text-center about" id="about">
+      <div class="container">
+        <h2 class="mb-5 fw-bold">Hakkımızda</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf igri"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          sint dignissimos tempore quas facilis unde, ipsa a nam, labore
+          perferendis illum autem. Ratione veniam natus nihil velit commodi
+          mollitia recusandae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Cumque hic voluptates cupiditate deleniti facilis a
+          aperiam pariatur obcaecati veniam nulla ex quia, suscipit ipsa
+          consequuntur, eos consequatur omnis molestias reiciendis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          accusamus perspiciatis unde quia minima consequuntur possimus
+          doloribus eius sit pariatur, repellat ea enim, at quo magni sequi
+          doloremque fugiat tempora.
+        </p>
+      </div>
+    </section>
+    <!--? >>>>>>>ABOUT END -->
+    <!-- ! >>>>>>>>TEAM START<<<<<< -->
+    <section class="p-5 text-center team" id="team">
+      <div class="container">
+        <h2 class="mb-5 fw-bold">Ekibimiz</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf ibeyaz"></i>
+
+        <!-- CARDS START -->
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/avatar.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ahmet Murat ÜNSAL</h5>
+                <p class="card-text">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/evrim.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Evrim GÜRENEKLİ</h5>
+                <p class="card-text">BOŞ İŞLER BAKANI</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Frontend</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Frontend</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Frontend</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Backend</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Backend</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100 teamCard">
+              <img src="./img/ekip6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ekip Üyesi</h5>
+                <p class="card-text">Backend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARDS END -->
+      </div>
+    </section>
+    <!-- ! >>>>>>>>TEAM END<<<< -->
+
+    <!--* >>>>>>>> Gallery start <<<<<< -->
+    <section class="p-5 text-center gallery" id="gallery">
+      <div class="container">
+        <h2 class="mb-5 fw-bold">Galeri</h2>
+        <hr class="ayrac" />
+        <i class="fas fa-leaf igri"></i>
+        <!-- galeri cardları -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r1.jpg">
+                <img
+                  src="./img/r1.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r2.jpg">
+                <img
+                  src="./img/r2.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r3.jpg">
+                <img
+                  src="./img/r3.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r4.jpg">
+                <img
+                  src="./img/r4.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r4.jpg">
+                <img
+                  src="./img/r4.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r3.jpg">
+                <img
+                  src="./img/r3.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r2.jpg">
+                <img
+                  src="./img/r2.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="./img/r1.jpg">
+                <img
+                  src="./img/r1.jpg"
+                  class="figure-img shadow img-fluid rounded"
+                  alt="..."
+                />
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <!-- galeri cardları -->
+      </div>
+    </section>
+    <!--* >>>>>>>> Gallery end <<<<<< -->
+
+    <!--? contact start -->
+    <section class="p-5 text-center contact" id="contact">
+      <div class="container">
+        <h2 class="mb-5 fw-bold">İletişim</h2>
+        <hr class="ayrac" />
+        <i class="fas fa-leaf ibeyaz"></i>
+        <form class="col-md-10 m-auto">
+          <div class="input-group row mb-4">
+            <label for="ad" class="col-md-4 align-self-center">Ad:</label>
+            <input type="text" class="form-control col-md-8" id="ad" />
+          </div>
+          <div class="input-group row mb-4">
+            <label for="soyad" class="col-md-4 align-self-center">Soyad:</label>
+            <input type="text" class="col-md-8 form-control" id="soyad" />
+          </div>
+          <div class="input-group row mb-4">
+            <label for="email" class="col-md-4 align-self-center">Email:</label>
+            <input type="email" class="form-control col-md-8" id="email" />
+          </div>
+          <div class="input-group row mb-4">
+            <label for="message" class="col-md-4 align-self-center"
+              >Mesajınız:</label
+            >
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              class="col-md-8 form-control"
+            ></textarea>
+          </div>
+          <div class="form-group row justify-content-center">
+            <button type="submit" class="col-md-3 btn btn-primary">
+              GÖNDER
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--? contact end -->
+
+    <!--! Footer start -->
+
+    <div class="bg-dark text-light text-center">
+      <p class="align-middle p-5 mb-0">
+        <span>Tüm hakları sakladır &copy; | 2023</span><br />
+        <span>Designed by |<b> @ogretmenbabis</b> </span>
+      </p>
+    </div>
+
+    <!--! Footer end -->
+
+    <!-- TODO bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
